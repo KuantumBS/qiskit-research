@@ -1,5 +1,5 @@
 [build-system]
-requires = ["flit_core >=3.2,<4"]
+requires = ["flit_core >=3.2"]
 build-backend = "flit_core.buildapi"
 
 [project]
@@ -18,38 +18,40 @@ classifiers = [
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "Topic :: Scientific/Engineering :: Physics",
 ]
 
 requires-python = ">=3.8"
 
 dependencies = [
-    "mapomatic==0.8.0",
-    "mthree==0.24",
+    "mapomatic>=0.8.0",
+    "mthree>=0.24",
     "pylatexenc",
-    "qiskit-aer~=0.11",
-    "qiskit-experiments==0.3.1",
+    "qiskit-aer>=0.11",
+    "qiskit-experiments>=0.3.1",
     "qiskit-ibm-runtime",
     "qiskit-ibmq-provider",
-    "qiskit-nature~=0.5",
-    "qiskit-terra==0.23",
+    "qiskit-nature>=0.5",
+    "qiskit-terra>=0.23",
 ]
 
 [project.optional-dependencies]
 dev = [
-    "black[jupyter]~=23.1",
+    "black[jupyter]>=23.1",
     "coverage",
-    "ddt~=1.5",
+    "ddt>=1.5",
     "importlib_metadata",
     "ipywidgets",
-    "mypy==0.961",
+    "mypy>=0.961",
     "jupyter-sphinx",
     "matplotlib",
     "nbmake",
     "nbsphinx",
     "pylatexenc",
-    "pylint==2.14",
-    "pytest==7.1",
+    "pylint>=2.14",
+    "pytest>=7.1",
     "reno",
     "sphinx-autodoc-typehints",
     "tqdm>=4.59.0",
